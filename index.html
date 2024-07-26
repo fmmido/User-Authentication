@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elmontag Hub</title>
+    <link rel="stylesheet" href="styles.css">
+
+</head>
+<body>
+    <div id="navbar-placeholder"></div>
+
+    <main>
+        <div class="container">
+            <!-- Repositories Section -->
+            <section id="repo-list" class="hidden">
+                <div class="repo-container">
+                    <h2>Explore Repositories</h2>
+                    <ul id="repos" class="repo-list">
+                        <!-- Repository items will be dynamically inserted here -->
+                    </ul>
+                </div>
+                <section class="add-repo">
+                    <h2>Add New Repository</h2>
+                    <form id="addRepoForm">
+                        <label for="name">Repository Name:</label>
+                        <input type="text" id="name" name="name" required>
+                        <br>
+                        <label for="description">Description:</label>
+                        <textarea id="description" name="description" required></textarea>
+                        <br>
+                        <label for="owner">Owner:</label>
+                        <input type="text" id="owner" name="owner" >
+                        <br>
+                        <label for="stars">Stars:</label>
+                        <input type="number" id="stars" name="stars" value="0">
+                        <br>
+                        <label for="forks">Forks:</label>
+                        <input type="number" id="forks" name="forks" value="0">
+                        <br>
+                        <button type="submit">Add Repository</button>
+                    </form>
+                </section>
+            </section>
+
+            <!-- Sign Up Section -->
+            <section class="hidden" id="signup-section">
+                <h2>Sign Up</h2>
+                <form id="signupForm">
+                    <label for="signup-username">Username:</label>
+                    <input type="text" id="signup-username" name="username" required>
+                    <br>
+                    <label for="signup-password">Password:</label>
+                    <input type="password" id="signup-password" name="password" required>
+                    <br>
+                    <button type="submit">Sign Up</button>
+                </form>
+            </section>
+
+            <!-- Login Section -->
+            <section class="hidden" id="login-section">
+                <h2>Login</h2>
+                <form id="loginForm">
+                    <label for="login-username">Username:</label>
+                    <input type="text" id="login-username" name="username" required>
+                    <br>
+                    <label for="login-password">Password:</label>
+                    <input type="password" id="login-password" name="password" required>
+                    <br>
+                    <button type="submit">Login</button>
+                </form>
+            </section>
+        </div>
+    </main>
+
+    <div id="footer-placeholder"></div>
+    
+    <script src="script.js"></script>
+ 
+</body>
+</html>

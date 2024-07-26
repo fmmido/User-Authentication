@@ -1,0 +1,16 @@
+[
+    {
+        "id": 1,
+        "name": "Repository 1",
+        "description": "Description of repository 1",
+        "owner": "Owner 1",
+        "created_at": "2024-07-24"
+    },
+    {
+        "id": 2,
+        "name": "Repository 2",
+        "description": "Description of repository 2",
+        "owner": "Owner 2",
+        "created_at": "2024-07-24"
+    }
+]

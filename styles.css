@@ -1,0 +1,240 @@
+/* styles.css */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5;
+}
+
+header {
+    background-color: #24292e;
+    color: white;
+    padding: 10px 0;
+}
+
+header .container {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header h1 {
+    margin: 0;
+}
+
+header nav a {
+    color: white;
+    text-decoration: none;
+    margin-left: 15px;
+}
+
+header nav a:hover {
+    text-decoration: underline;
+}
+
+main {
+    padding: 20px 0;
+}
+
+main .container {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.repo-list {
+    flex: 1;
+    margin-right: 20px;
+}
+
+.repo-list ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.repo-list li {
+    border-bottom: 1px solid #ddd;
+    padding: 10px 0;
+}
+
+.repo-list h3 a {
+    color: #0366d6;
+    text-decoration: none;
+}
+
+.repo-list h3 a:hover {
+    text-decoration: underline;
+}
+
+.repo-details {
+    flex: 2;
+}
+
+footer {
+    background-color: #24292e;
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+}
+
+footer .container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+footer a {
+    color: white; /* Sets the link color to white */
+    text-decoration: none; /* Optional: Removes underline from the link */
+}
+
+footer a:hover {
+    text-decoration: underline; /* Optional: Underlines the link on hover */
+}
+
+/* styles.css */
+
+.repo-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.repo-item {
+    border: 1px solid #e1e4e8;
+    border-radius: 6px;
+    padding: 16px;
+    margin-bottom: 16px;
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+}
+
+.repo-item h3 {
+    margin: 0;
+    font-size: 20px;
+}
+
+.repo-item p {
+    color: #6a737d;
+    margin: 4px 0;
+}
+
+.repo-item .repo-meta {
+    display: flex;
+    justify-content: space-between;
+    font-size: 14px;
+    color: #586069;
+}
+
+.repo-item .repo-meta span {
+    display: inline-block;
+}
+
+.repo-item .repo-meta .repo-stars,
+.repo-item .repo-meta .repo-forks {
+    margin-right: 8px;
+}
+
+.add-repo {
+    margin-top: 20px;
+}
+
+.hidden {
+    display: none;
+}
+/* Updated CSS for repository display */
+.repo-container {
+    width: 90%;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.repo-list {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.repo-item {
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: calc(33% - 20px);
+    box-sizing: border-box;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.repo-item:hover {
+    transform: scale(1.03);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.repo-item h3 {
+    margin-top: 0;
+    font-size: 1.2em;
+}
+
+.repo-meta {
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.9em;
+    color: #666;
+}
+
+
+/*  repos in user's profile */
+
+.repo-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+    margin-top: 20px;
+}
+
+.repo-item {
+    background: #fff;
+    border: 1px solid #e1e4e8;
+    border-radius: 6px;
+    padding: 16px;
+    width: calc(33.333% - 16px); /* Adjust width for responsiveness */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    box-sizing: border-box;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.repo-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+}
+
+.repo-item h3 {
+    margin: 0 0 8px;
+    font-size: 1.2em;
+    color: #0366d6;
+}
+
+.repo-item p {
+    margin: 0 0 8px;
+    color: #586069;
+}
+
+.repo-meta {
+    font-size: 0.85em;
+    color: #586069;
+    display: flex;
+    justify-content: space-between;
+}
+
+.repo-stars,
+.repo-forks {
+    display: inline-block;
+}
+
+

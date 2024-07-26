@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Profile</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="navbar-placeholder"></div>
+
+    <main>
+        <div class="container">
+            <!-- User Profile Section -->
+            <section id="profile-section">
+                <h2>User Profile</h2>
+                <div id="profile-info">
+                    <p id="profile-username">Username: </p>
+                    <p id="profile-email">Email: </p>
+                </div>
+                <h2>Repositories</h2>
+                <div id="repo-list" class="repo-list"> <!-- Changed ID to repo-list -->
+                    <!-- Repositories will be dynamically inserted here -->
+                </div>
+            </section>
+            <ul id="user-repos" class="hidden">
+                <!-- Repositories will be loaded here by JavaScript -->
+            </ul>
+            
+            
+        </div>
+    </main>
+
+    <div id="footer-placeholder"></div>
+    
+    <script src="profile.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

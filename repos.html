@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Repositories</title>
+</head>
+<body>
+    <h1>Repositories</h1>
+    <ul id="repo-list"></ul>
+
+    <script>
+        async function loadRepositories() {
+            const response = await fetch('repos.json');
+            const repos = await response.json();
+            const repoList = document.getElementById('repo-list');
+
+            repos.forEach(repo => {
+                const li = document.createElement('li');
+                li.textContent = `${repo.name}: ${repo.description} (Owner: ${repo.owner})`;
+                repoList.appendChild(li);
+            });
+        }
+
+        loadRepositories();
+    </script>
+</body>
+</html>
